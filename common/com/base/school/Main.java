@@ -1,5 +1,9 @@
 package com.base.school;
 
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import com.base.school.gui.Gui;
 import com.base.school.loops.DoWhile;
 import com.base.school.loops.Foreach;
 import com.base.school.stringbuffer.StringBuff;
@@ -20,6 +24,7 @@ public class Main {
 		doDoWhile();
 		doStringBuffer();
 		doStringTokenizer();
+		doGui();
 	}
 	
 	public void doForeach()
@@ -46,6 +51,11 @@ public class Main {
 	{
 		String res = StringToken.process("Hello,I'm a,pizza ok?");
 		print(res);
+	}
+	
+	public void doGui()
+	{
+		Gui.process();
 	}
 	
 	private void print(String msg)
